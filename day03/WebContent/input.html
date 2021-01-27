@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>input 태그 예제</title>
+</head>
+<body>
+	<h1>input 태그 예제</h1>
+	<form action="register.html" method="post"
+		enctype="multipart/form-data"></form>
+	<p>
+		아이디<input type="text" size="20" maxlength="12"
+			placeholder="아이디를 입력하세요" id="userid" required>
+	</p>
+	<p>
+		비밀번호<input type="password" size="20" maxlength="20"
+			placeholder="비밀번호를 입력하세요">
+	</p>
+
+	<p>
+		<strong>성별</strong> <label>남자<input ckecked value="m"
+			type="radio" name="gender"></label> <label>여자<input
+			type="radio" value="w" name="gender"></label>
+	</p>
+	<fieldset>
+		<legend>취미</legend>
+		<p>
+			<label>드라이브<input type="checkbox" name="hobby" value="드라이브"></label>
+			<label>영화감상<input type="checkbox" name="hobby" value="영화감상"></label>
+			<label>음악듣기<input type="checkbox" name="hobby" value="음악듣기"></label>
+			<label>코딩하기<input type="checkbox" name="hobby" value="코딩하기"></label>
+		</p>
+	</fieldset>
+	<p>
+		프로필사진 <input type="file">
+	</p>
+	<p>
+		색상<input type="color">
+	</p>
+	<p>
+		이메일<input type="email">
+	</p>
+	<p>
+		참고 사이트<input type="url">
+	</p>
+	<p>
+		연락처<input type="tel">
+	</p>
+	<p>
+		조회기간<input type="date"> ~ <input type="date">
+	</p>
+	<p>
+		나이<input type="number" value="1" min="1" max="150" step="5">
+	</p>
+
+	<p>
+		학과선택 <select name="class">
+			<option value="건공">건축공학과</option>
+			<option value="기공">기계공학과</option>
+			<option value="전공">전자공학과</option>
+			<option value="컴공">컴퓨터공학과</option>
+			<option value="화공">화학공학과</option>
+		</select>
+	</p>
+	<p>
+		만족도(상, 중, 하)<input type="range" value="1" min="1" max="3">
+	</p>
+	<p>
+		검색<input type="search">
+	</p>
+
+	<p>이용한 교통수단<input type="text" list="trans">
+		<datalist id="trans">
+			<option value="bus" label="버스"></option>
+			<option value="bicycle"></option>
+			<option value="text"></option>
+		</datalist>
+	</p>
+	<p>
+		<textarea rows="5" cols="100">
+			안녕하세요 자기소개 하기
+		</textarea>
+	</p>	
+	<p>진행률<progress value="30" max="100"></progress></p>
+	<p><input type="submit" value="가입완료"></p>
+	<p><input type="reset" value="초기화"></p>
+	<p><input type="button" value="그냥 버튼" onclick="sendit();"></p>
+</body> 
+<script>function sendit(){
+	alert("클릭 됐어요!!");
+}
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
